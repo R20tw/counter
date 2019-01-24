@@ -1,5 +1,5 @@
 <template>
-  <div class="ts grid">
+  <div class="ts stackable grid">
     <div class="three wide column">
       <TocasButton
         class="negative fluid"
@@ -7,7 +7,7 @@
         v-on:buttonClicked="deleteItem"
       ></TocasButton>
     </div>
-    <div class="seven wide column">
+    <div class="four wide column">
       <div class="ts inverted segment">
         <div class="ts inverted header">{{ item.name }}</div>
       </div>
