@@ -1,18 +1,18 @@
 <template>
-  <div class="ts button">
-    {{ title }}
+  <div class="ts big button" v-on:click="buttonClicked">
+    {{ ButtonTitle }}
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Button',
+  name: 'TocasButton',
   props: {
-    title : String
-  },
+    ButtonTitle : String
+  }, 
   methods: {
-    callParentMethod(){
-
+    buttonClicked() {
+      this.$emit("buttonClicked", this.inputValue);
     }
   }
 }

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Counter v-bind:items="items">
-
+      
     </Counter>
   </div>
 </template>

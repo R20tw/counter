@@ -6,20 +6,26 @@
     </div>
     <div class="field">
       <label></label>
-      <button class="ts button" v-on:click="buttonClicked">新增項目</button>
+      <TocasButton class="ts button" v-on:buttonClicked="buttonClicked" :ButtonTitle="addButtonTitle"></TocasButton>
     </div>
   </div>
 </template>
 
 <script>
+import TocasButton from "./TocasButton.vue";
+
 export default {
   name: "Input",
+  components: {
+    TocasButton
+  },
   props: {
     msg: String
   },
   data() {
     return {
-      inputValue: ""
+        inputValue: "",
+        addButtonTitle : "新增項目"
     };
   },
   methods: {
