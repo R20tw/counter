@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <NavBar></NavBar>
     <Counter v-bind:items="items">
       
     </Counter>
@@ -8,11 +9,13 @@
 
 <script>
 import Counter from './components/Counter.vue'
+import NavBar from './components/CountNavBarer.vue'
 
 export default {
   name: 'app',
   components: {
-    Counter
+    Counter,
+    NavBar
   },
   props: {
     items : Array

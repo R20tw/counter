@@ -1,7 +1,6 @@
 <template>
   <div class="ts form">
     <div class="field">
-      <label></label>
       <input type="text" v-model="inputValue">
     </div>
     <div class="field">
