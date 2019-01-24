@@ -1,5 +1,5 @@
 <template>
-  <div class="ts big button" v-on:click="buttonClicked">
+  <div class="ts massive button" v-on:click="buttonClicked">
     {{ ButtonTitle }}
   </div>
 </template>
