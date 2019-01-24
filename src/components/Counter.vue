@@ -65,6 +65,11 @@ export default {
           return true;
         }
       });
+      let tmp = [];
+      this.items.forEach(el => {
+        tmp.push(el.name);
+      });
+      location.hash = Base64.encode(JSON.stringify(tmp));
     },
     plusItem(id) {
       for (var i in this.items) {

@@ -2,7 +2,7 @@
   <div class="ts stackable grid">
     <div class="three wide column">
       <TocasButton
-        class="negative fluid"
+        class="negative fluid very compact"
         :ButtonTitle="deleteTitle"
         v-on:buttonClicked="deleteItem"
       ></TocasButton>
@@ -20,10 +20,10 @@
     <div class="four wide column">
       <div class="ts grid">
         <div class="eight wide column">
-          <TocasButton class="primary fluid" :ButtonTitle="plusTitle" v-on:buttonClicked="plusItem"></TocasButton>
+          <TocasButton class="primary fluid very compact" :ButtonTitle="plusTitle" v-on:buttonClicked="plusItem"></TocasButton>
         </div>
         <div class="eight wide column">
-          <TocasButton class="info fluid" :ButtonTitle="lessTitle" v-on:buttonClicked="lessItem"></TocasButton>
+          <TocasButton class="info fluid very compact" :ButtonTitle="lessTitle" v-on:buttonClicked="lessItem"></TocasButton>
         </div>
       </div>
     </div>
