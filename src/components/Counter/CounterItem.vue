@@ -7,7 +7,7 @@
         v-on:buttonClicked="deleteItem"
       ></TocasButton>
     </div>
-    <div class="four wide column">
+    <div class="five wide column">
       <div class="ts inverted segment">
         <div class="ts inverted header">{{ item.name }}</div>
       </div>
@@ -17,7 +17,7 @@
         <div class="ts inverted header">{{ item.number }}</div>
       </div>
     </div>
-    <div class="four wide column">
+    <div class="six wide column">
       <div class="ts grid">
         <div class="eight wide column">
           <TocasButton class="primary fluid very compact" :ButtonTitle="plusTitle" v-on:buttonClicked="plusItem"></TocasButton>
