@@ -9,7 +9,7 @@
 
 <script>
 import Counter from './components/Counter.vue'
-import NavBar from './components/CountNavBarer.vue'
+import NavBar from './components/NavBar.vue'
 
 export default {
   name: 'app',
