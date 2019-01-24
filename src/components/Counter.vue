@@ -14,6 +14,8 @@
 import Input from "./Counter/Input.vue";
 import List from "./Counter/List.vue";
 
+let Base64 = require('js-base64').Base64;
+
 export default {
   name: "Counter",
   components: {
@@ -34,6 +36,12 @@ export default {
         return
       }
       this.items.push({ name: value, number: 0, id: id });
+      
+      let tmp = [];
+      this.items.forEach((el) => {
+        tmp.push(el.name)
+      })
+      location.hash = Base64.encode(JSON.stringify(tmp));
     },
     deleteItem(id) {
       this.items = this.items.filter(el => {
